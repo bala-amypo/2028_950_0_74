@@ -7,6 +7,6 @@ public class Studentcontroller{
      public Student getAdd(Student var){
         return ser.saveDate(var);
      }
-     public List<Student> 
+     /* public List<Student>  */
 
 }
