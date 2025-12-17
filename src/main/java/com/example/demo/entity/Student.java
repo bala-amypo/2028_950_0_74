@@ -4,7 +4,7 @@ import jarkata.persistence.*;
 @Entity
 public class Student{
     @Id //primary key 
-    @GenerateValue(strategy+GenerationType.IDENTITY)
+    @GenerateValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String email;
