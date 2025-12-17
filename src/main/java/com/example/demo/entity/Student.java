@@ -1,30 +1,32 @@
 package com.example.demo.entity;
 
+
+import jarkata.persistence.Id;
 @Entity
 
 public class Student{
-    @id
-    @Genera
-    private int id;
+    @Id
+    @GenerateValue(strategy+GenerationType.IDENTITY)
+    private Integer id;
     private String name;
     private String email;
 
-    public int getId(){
+    public Integer getId(){
         return id;
     }
-    public void setId(int id){
+    public void setId(Integer id){
         this.id=id;
     }
-    public int getName(){
+    public String getName(){
         return name;
     }
-    public void setName(){
+    public void setName(String name){
        this.name=name;   
     }
-    public int getEmail(){
+    public String getEmail(){
         return email;
     }
-    public void setEmail(){
+    public void setEmail(String email){
         this.email=email;
     }
     public Student(int id,String name,String email){
