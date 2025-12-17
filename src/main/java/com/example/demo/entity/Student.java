@@ -23,5 +23,9 @@ public class Student{
     public void setEmail(){
         this.email=email;
     }
-    public Student()
+    public Student(int id,String name,String email){
+        this.id=id;
+        this.name=name;
+        this.email=email;
+    }
 }
